@@ -1,0 +1,26 @@
+{
+  "name": "addonify-gutenberg-block-image-gallery-lightbox",
+  "version": "1.0.0",
+  "description": "A simple plugin that makes Gutenberg block image clickable to preview it in LightBox popup. ",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "gulp makepot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/addonify/addonify-gutenberg-block-image-gallery-lightbox.git"
+  },
+  "keywords": [
+    "addonify"
+  ],
+  "author": "addonify",
+  "license": "GPL-2.0-or-later",
+  "bugs": {
+    "url": "https://github.com/addonify/addonify-gutenberg-block-image-gallery-lightbox/issues"
+  },
+  "homepage": "https://github.com/addonify/addonify-gutenberg-block-image-gallery-lightbox#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-wp-pot": "^2.5.0"
+  }
+}

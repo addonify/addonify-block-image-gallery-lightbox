@@ -1,0 +1,47 @@
+
+/* ===========================================
+= 
+= Version: 1.0.0
+= Updated date: 21 May 2021 
+= 
+=========================================================*/
+
+
+.adfy__image__lightbox,
+.adfy__image__gallery li figure {
+
+    position: relative;
+}
+
+.adfy__image__gallery li figure {
+
+    cursor: pointer;
+}
+
+.adfy__image__lightbox .adfy__lightbox__link {
+
+    position: relative;
+    display: inline-block;
+}
+
+.adfy__image__gallery li figure .adfy__lightbox__icon,
+.adfy__image__lightbox .adfy__lightbox__link .adfy__lightbox__icon {
+
+    position: absolute;
+    left:50%;
+    top:50%;
+    z-index: 100;
+    color:white;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: normal;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.adfy__lightbox__icon svg {
+
+    display: block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+}
