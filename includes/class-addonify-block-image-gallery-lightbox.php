@@ -9,8 +9,8 @@
  * @link       https://addonify.com/
  * @since      1.0.0
  *
- * @package    Addonify_Gutenberg_Block_Image_Gallery_Lightbox
- * @subpackage Addonify_Gutenberg_Block_Image_Gallery_Lightbox/includes
+ * @package    Addonify_Block_Image_Gallery_Lightbox
+ * @subpackage Addonify_Block_Image_Gallery_Lightbox/includes
  */
 
 /**
@@ -23,11 +23,11 @@
  * version of the plugin.
  *
  * @since      1.0.0
- * @package    Addonify_Gutenberg_Block_Image_Gallery_Lightbox
- * @subpackage Addonify_Gutenberg_Block_Image_Gallery_Lightbox/includes
+ * @package    Addonify_Block_Image_Gallery_Lightbox
+ * @subpackage Addonify_Block_Image_Gallery_Lightbox/includes
  * @author     Addonify <addonify@gmail.com>
  */
-class Addonify_Gutenberg_Block_Image_Gallery_Lightbox {
+class Addonify_Block_Image_Gallery_Lightbox {
 
 	/**
 	 * The loader that's responsible for maintaining and registering all hooks that power
@@ -35,7 +35,7 @@ class Addonify_Gutenberg_Block_Image_Gallery_Lightbox {
 	 *
 	 * @since    1.0.0
 	 * @access   protected
-	 * @var      Addonify_Gutenberg_Block_Image_Gallery_Lightbox_Loader    $loader    Maintains and registers all hooks for the plugin.
+	 * @var      Addonify_Block_Image_Gallery_Lightbox_Loader    $loader    Maintains and registers all hooks for the plugin.
 	 */
 	protected $loader;
 
@@ -67,12 +67,12 @@ class Addonify_Gutenberg_Block_Image_Gallery_Lightbox {
 	 * @since    1.0.0
 	 */
 	public function __construct() {
-		if ( defined( 'ADDONIFY_GUTENBERG_BLOCK_IMAGE_GALLERY_LIGHTBOX_VERSION' ) ) {
-			$this->version = ADDONIFY_GUTENBERG_BLOCK_IMAGE_GALLERY_LIGHTBOX_VERSION;
+		if ( defined( 'ADDONIFY_BLOCK_IMAGE_GALLERY_LIGHTBOX_VERSION' ) ) {
+			$this->version = ADDONIFY_BLOCK_IMAGE_GALLERY_LIGHTBOX_VERSION;
 		} else {
 			$this->version = '1.0.0';
 		}
-		$this->plugin_name = 'addonify-gutenberg-block-image-gallery-lightbox';
+		$this->plugin_name = 'addonify-block-image-gallery-lightbox';
 
 		$this->load_dependencies();
 		$this->set_locale();
@@ -85,10 +85,10 @@ class Addonify_Gutenberg_Block_Image_Gallery_Lightbox {
 	 *
 	 * Include the following files that make up the plugin:
 	 *
-	 * - Addonify_Gutenberg_Block_Image_Gallery_Lightbox_Loader. Orchestrates the hooks of the plugin.
-	 * - Addonify_Gutenberg_Block_Image_Gallery_Lightbox_i18n. Defines internationalization functionality.
-	 * - Addonify_Gutenberg_Block_Image_Gallery_Lightbox_Admin. Defines all hooks for the admin area.
-	 * - Addonify_Gutenberg_Block_Image_Gallery_Lightbox_Public. Defines all hooks for the public side of the site.
+	 * - Addonify_Block_Image_Gallery_Lightbox_Loader. Orchestrates the hooks of the plugin.
+	 * - Addonify_Block_Image_Gallery_Lightbox_i18n. Defines internationalization functionality.
+	 * - Addonify_Block_Image_Gallery_Lightbox_Admin. Defines all hooks for the admin area.
+	 * - Addonify_Block_Image_Gallery_Lightbox_Public. Defines all hooks for the public side of the site.
 	 *
 	 * Create an instance of the loader which will be used to register the hooks
 	 * with WordPress.
@@ -114,16 +114,16 @@ class Addonify_Gutenberg_Block_Image_Gallery_Lightbox {
 		 * The class responsible for defining all actions that occur in the public-facing
 		 * side of the site.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-addonify-gutenberg-block-image-gallery-lightbox-public.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-addonify-block-image-gallery-lightbox-public.php';
 
-		$this->loader = new Addonify_Gutenberg_Block_Image_Gallery_Lightbox_Loader();
+		$this->loader = new Addonify_Block_Image_Gallery_Lightbox_Loader();
 
 	}
 
 	/**
 	 * Define the locale for this plugin for internationalization.
 	 *
-	 * Uses the Addonify_Gutenberg_Block_Image_Gallery_Lightbox_i18n class in order to set the domain and to register the hook
+	 * Uses the Addonify_Block_Image_Gallery_Lightbox_i18n class in order to set the domain and to register the hook
 	 * with WordPress.
 	 *
 	 * @since    1.0.0
@@ -131,7 +131,7 @@ class Addonify_Gutenberg_Block_Image_Gallery_Lightbox {
 	 */
 	private function set_locale() {
 
-		$plugin_i18n = new Addonify_Gutenberg_Block_Image_Gallery_Lightbox_i18n();
+		$plugin_i18n = new Addonify_Block_Image_Gallery_Lightbox_i18n();
 
 		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
 
@@ -146,7 +146,7 @@ class Addonify_Gutenberg_Block_Image_Gallery_Lightbox {
 	 */
 	private function define_public_hooks() {
 
-		$plugin_public = new Addonify_Gutenberg_Block_Image_Gallery_Lightbox_Public( $this->get_plugin_name(), $this->get_version() );
+		$plugin_public = new Addonify_Block_Image_Gallery_Lightbox_Public( $this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
@@ -177,7 +177,7 @@ class Addonify_Gutenberg_Block_Image_Gallery_Lightbox {
 	 * The reference to the class that orchestrates the hooks with the plugin.
 	 *
 	 * @since     1.0.0
-	 * @return    Addonify_Gutenberg_Block_Image_Gallery_Lightbox_Loader    Orchestrates the hooks of the plugin.
+	 * @return    Addonify_Block_Image_Gallery_Lightbox_Loader    Orchestrates the hooks of the plugin.
 	 */
 	public function get_loader() {
 		return $this->loader;

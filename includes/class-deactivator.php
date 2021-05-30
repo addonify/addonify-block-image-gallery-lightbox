@@ -6,8 +6,8 @@
  * @link       https://addonify.com/
  * @since      1.0.0
  *
- * @package    Addonify_Gutenberg_Block_Image_Gallery_Lightbox
- * @subpackage Addonify_Gutenberg_Block_Image_Gallery_Lightbox/includes
+ * @package    Addonify_Block_Image_Gallery_Lightbox
+ * @subpackage Addonify_Block_Image_Gallery_Lightbox/includes
  */
 
 /**
@@ -16,11 +16,11 @@
  * This class defines all code necessary to run during the plugin's deactivation.
  *
  * @since      1.0.0
- * @package    Addonify_Gutenberg_Block_Image_Gallery_Lightbox
- * @subpackage Addonify_Gutenberg_Block_Image_Gallery_Lightbox/includes
+ * @package    Addonify_Block_Image_Gallery_Lightbox
+ * @subpackage Addonify_Block_Image_Gallery_Lightbox/includes
  * @author     Addonify <addonify@gmail.com>
  */
-class Addonify_Gutenberg_Block_Image_Gallery_Lightbox_Deactivator {
+class Addonify_Block_Image_Gallery_Lightbox_Deactivator {
 
 	/**
 	 * Short Description. (use period)

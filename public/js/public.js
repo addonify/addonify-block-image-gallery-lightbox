@@ -1,10 +1,10 @@
-(function($) {
+(function ($) {
 
     'use strict';
 
-    $(document).ready(function() {
+    $(document).ready(function () {
 
-        var adfyinit = function() {
+        var adfyinit = function () {
 
             adfyWpBlockGallery();
             adfyWpBlockImage();
@@ -21,11 +21,11 @@
             var galleryEles = $('.single .wp-block-gallery');
 
             if (galleryEles.length > 0) {
-                $.each(galleryEles, function(i, v) {
+                $.each(galleryEles, function (i, v) {
                     $(this).find('ul').addClass('adfy__image__gallery');
                     var allImages = $(this).find('figure > img');
                     if (allImages) {
-                        $.each(allImages, function(a, b) {
+                        $.each(allImages, function (a, b) {
                             var imgSource = $(this).attr('src');
                             $(this).parents('li').attr('data-src', imgSource);
                             $('<span class="adfy__lightbox__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-maximize"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path></svg></span>').insertAfter($(this));
@@ -42,7 +42,7 @@
 
             var allImageBlocks = $('.single .wp-block-image');
             if (allImageBlocks.length > 0) {
-                $.each(allImageBlocks, function() {
+                $.each(allImageBlocks, function () {
 
                     $(this).addClass('adfy__image__lightbox');
 
@@ -54,7 +54,7 @@
 
                     var imageEle = $(this).find('img');
                     var imageSrc = imageEle.attr('src');
-                    imageEle.wrap(function() {
+                    imageEle.wrap(function () {
                         return "<a href='" + imageSrc + "' class='adfy__lightbox__link'></a>";
                     });
                     $('<span class="adfy__lightbox__icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-maximize"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path></svg></span>').insertAfter(imageEle);
@@ -99,7 +99,7 @@
         function adfyAuthorCredits() {
 
             // author credit
-            console.log('Hi Folks 👋, Gutenberg Block Image Gallery Lightbox Powered By: https://github.com/addonify/addonify-gutenberg-block-image-gallery-lightbox');
+            console.log('Hi Folks 👋, Block Image Gallery Lightbox Powered By: https://github.com/addonify/addonify-block-image-gallery-lightbox');
         }
 
     });

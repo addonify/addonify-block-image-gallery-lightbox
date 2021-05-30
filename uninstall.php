@@ -22,7 +22,7 @@
  * @link       https://addonify.com/
  * @since      1.0.0
  *
- * @package    Addonify_Gutenberg_Block_Image_Gallery_Lightbox
+ * @package    Addonify_Block_Image_Gallery_Lightbox
  */
 
 // If uninstall not called from WordPress, then exit.

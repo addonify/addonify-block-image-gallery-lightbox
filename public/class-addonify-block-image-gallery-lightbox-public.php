@@ -6,8 +6,8 @@
  * @link       https://addonify.com/
  * @since      1.0.0
  *
- * @package    Addonify_Gutenberg_Block_Image_Gallery_Lightbox
- * @subpackage Addonify_Gutenberg_Block_Image_Gallery_Lightbox/public
+ * @package    Addonify_Block_Image_Gallery_Lightbox
+ * @subpackage Addonify_Block_Image_Gallery_Lightbox/public
  */
 
 /**
@@ -16,11 +16,11 @@
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the public-facing stylesheet and JavaScript.
  *
- * @package    Addonify_Gutenberg_Block_Image_Gallery_Lightbox
- * @subpackage Addonify_Gutenberg_Block_Image_Gallery_Lightbox/public
+ * @package    Addonify_Block_Image_Gallery_Lightbox
+ * @subpackage Addonify_Block_Image_Gallery_Lightbox/public
  * @author     Addonify <addonify@gmail.com>
  */
-class Addonify_Gutenberg_Block_Image_Gallery_Lightbox_Public {
+class Addonify_Block_Image_Gallery_Lightbox_Public {
 
 	/**
 	 * The ID of this plugin.
@@ -65,10 +65,10 @@ class Addonify_Gutenberg_Block_Image_Gallery_Lightbox_Public {
 		 * This function is provided for demonstration purposes only.
 		 *
 		 * An instance of this class should be passed to the run() function
-		 * defined in Addonify_Gutenberg_Block_Image_Gallery_Lightbox_Loader as all of the hooks are defined
+		 * defined in Addonify_Block_Image_Gallery_Lightbox_Loader as all of the hooks are defined
 		 * in that particular class.
 		 *
-		 * The Addonify_Gutenberg_Block_Image_Gallery_Lightbox_Loader will then create the relationship
+		 * The Addonify_Block_Image_Gallery_Lightbox_Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
@@ -89,10 +89,10 @@ class Addonify_Gutenberg_Block_Image_Gallery_Lightbox_Public {
 		 * This function is provided for demonstration purposes only.
 		 *
 		 * An instance of this class should be passed to the run() function
-		 * defined in Addonify_Gutenberg_Block_Image_Gallery_Lightbox_Loader as all of the hooks are defined
+		 * defined in Addonify_Block_Image_Gallery_Lightbox_Loader as all of the hooks are defined
 		 * in that particular class.
 		 *
-		 * The Addonify_Gutenberg_Block_Image_Gallery_Lightbox_Loader will then create the relationship
+		 * The Addonify_Block_Image_Gallery_Lightbox_Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
