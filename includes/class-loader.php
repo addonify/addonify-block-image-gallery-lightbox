@@ -6,8 +6,8 @@
  * @link       https://addonify.com/
  * @since      1.0.0
  *
- * @package    Addonify_Gutenberg_Block_Image_Gallery_Lightbox
- * @subpackage Addonify_Gutenberg_Block_Image_Gallery_Lightbox/includes
+ * @package    Addonify_Block_Image_Gallery_Lightbox
+ * @subpackage Addonify_Block_Image_Gallery_Lightbox/includes
  */
 
 /**
@@ -17,11 +17,11 @@
  * the plugin, and register them with the WordPress API. Call the
  * run function to execute the list of actions and filters.
  *
- * @package    Addonify_Gutenberg_Block_Image_Gallery_Lightbox
- * @subpackage Addonify_Gutenberg_Block_Image_Gallery_Lightbox/includes
+ * @package    Addonify_Block_Image_Gallery_Lightbox
+ * @subpackage Addonify_Block_Image_Gallery_Lightbox/includes
  * @author     Addonify <addonify@gmail.com>
  */
-class Addonify_Gutenberg_Block_Image_Gallery_Lightbox_Loader {
+class Addonify_Block_Image_Gallery_Lightbox_Loader {
 
 	/**
 	 * The array of actions registered with WordPress.
